@@ -1,0 +1,711 @@
+﻿body {background:#fff}
+.dNone{display:none !important}
+.vHidden{visibility:hidden !important}
+
+.FL{float: left}
+.FR{float: right}
+
+.relative{position: relative}
+.absolute{position: absolute}
+.center{text-align: center}
+
+@font-face {font-family:"opensans";
+    src:url("../Fonts/open-sans.regular.eot");
+    src:url("../Fonts/open-sans.regular.eot?#iefix") format("embedded-opentype"),
+    url("../Fonts/open-sans.regular.woff") format("woff"),
+    url("../Fonts/open-sans.regular.ttf") format("truetype"),
+    url("../Fonts/open-sans.regular.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+@font-face {font-family:"opensans-bold";
+    src:url("../Fonts/open-sans.bold.eot");
+    src:url("../Fonts/open-sans.bold.eot?#iefix") format("embedded-opentype"),
+    url("../Fonts/open-sans.bold.woff") format("woff"),
+    url("../Fonts/open-sans.bold.ttf") format("truetype"),
+    url("../Fonts/open-sans.bold.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+*{font-family:opensans}
+
+
+header{
+    background: #393843;
+    padding: 22px 0
+}
+
+header .logoCont img{
+    max-width: 160px;
+    margin-top: -5px;
+}
+
+header .item{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: -2px;
+    transition: all 0.3s
+}
+header .item:hover{
+    color: #D33497
+}
+header .item:hover svg *{
+    transition: all 0.3s
+}
+header .item:hover svg *{
+    fill: #D33497
+}
+header .first .item svg{
+    margin-right: 10px;
+    vertical-align: -1px
+}
+header .second{
+    text-align: right
+}
+header .second .item svg{
+    margin-left: 10px
+}
+
+
+.mainHomeSection{
+    background: url('../Images/mainSectionImg.jpg') no-repeat;
+    background-size: cover;
+    height: 730px;
+    background-position: center;
+    position: relative;
+    padding: 0
+}
+
+
+.mainHomeSection .content{
+    padding-top: 90px
+}
+.mainHomeSection .content h1{
+    color: #333;
+    font-size: 45px;
+    line-height: 50px;
+    font-family: opensans-bold;
+    margin: 0 0 20px;
+    max-width: 80%
+}
+.mainHomeSection .content h5{
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px
+}
+.mainHomeSection .content .bookBtn{
+    background: #c44ba2;
+    background: -moz-linear-gradient(top, #c44ba2 0%, #af257e 100%);
+    background: -webkit-linear-gradient(top, #c44ba2 0%,#af257e 100%);
+    background: linear-gradient(to bottom, #c44ba2 0%,#af257e 100%);
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 16px;
+}
+.mainHomeSection .emiratesIslamicLogo{
+    position: absolute;
+    bottom: 40px;
+}
+
+.mainHomeSection .scrollDownBtn{
+    width: 70px;
+    height: 70px;
+    background: #d33497;
+    border-radius: 200px;
+    position: absolute;
+    bottom: -35px;
+    text-align: center;
+    right: 98px;
+    cursor: pointer;
+    transition: all 0.3s
+}
+.mainHomeSection .scrollDownBtn:hover{
+    background: #bd2283
+}
+
+.mainHomeSection .scrollDownBtn svg{
+    margin-top: 29px;
+    width: 20px;
+    height: 12px
+}
+
+section{
+    padding: 100px 0;
+}
+
+.sectionTitle{
+    color: #333;
+    font-size: 36px;
+    line-height: 32px;
+    font-family: opensans-bold;
+    margin: 0;
+    line-height: 46px
+}
+.sectionTitle:after{
+    width: 180px;
+    height: 8px;
+    background: rgba(51,51,51,0.65);
+    content: '';
+    display: block;
+    margin-top: 30px;
+}
+
+.sectionTitle.white{
+    color: #fff;
+}
+.sectionTitle.white:after{
+    background: rgba(255,255,255,0.65);
+}
+
+
+.destinationTabs{
+    margin-top: 90px;
+    overflow: hidden
+}
+.destinationTabs .nav{
+    border-bottom: 1px solid #ddd
+}
+.destinationTabs .nav li{
+    display: inline-block
+}
+.destinationTabs .nav li a{
+    color: #751b53;
+    background: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px 7px;
+    margin-right: 10px;
+}
+.destinationTabs .nav li.active a{
+    border-bottom: 4px solid #751b53
+
+}
+.destinationTabs .tab-content{
+    margin-top: 20px
+}
+
+
+
+
+
+.destinationSlider .slick-slide{
+    height: auto;
+    transition: all 0.3s;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative
+}
+.destinationSlider .slick-slide img{
+    max-width: 100%
+}
+
+.destinationSlider .slick-current{
+    z-index: 3;
+    opacity: 0.7;
+}
+.destinationSlider .slick-current+div{
+    z-index: 4;
+    transform: scale(1.2);
+    box-shadow: 0 2px 23px -3px #333;
+}
+.destinationSlider .slick-current+div+div{
+    z-index: 3;
+    opacity: 0.7;
+}
+.destinationSlider .slick-current+div+div+div{
+    z-index: 2;
+    opacity: 0.7;
+    transform: scale(0.9) translate(-40px);
+}
+.destinationSlider .slick-current+div+div+div+div{
+    z-index: 1;
+    opacity: 0.7;
+    transform: scale(0.8) translate(-110px)
+}
+
+
+.destinationSlider .slick-list{
+    padding: 50px 0;
+    width: 100%;
+    margin-left: 55px;
+}
+
+
+.destinationSlider .slick-arrow {
+    width: 32px;
+    height: 32px;
+}
+.destinationSlider .slick-arrow::before {
+    display: none
+}
+
+.destinationSlider .slick-prev{
+    background: url('../Images/arrowLeft.png') no-repeat;
+    left: 0;
+}
+.destinationSlider .slick-next{
+    background: url('../Images/arrowRight.png') no-repeat;
+    right: 0;
+}
+
+
+.destinationSlider .content{
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+.destinationSlider .title{
+    font-family: opensans-bold;
+    font-size: 26px;
+}
+.destinationSlider .country{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.destinationSlider .price{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.destinationSlider .moreBtn{
+    width: 35px;
+    height: 35px;
+    background: #d33497;
+    border-radius: 200px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+.destinationSlider .moreBtn svg{
+    transform: rotate(-90deg);
+    margin-top: 13px;
+}
+
+
+.creditCardsSection{
+    background: #4d1965;
+}
+
+.creditCardsSection .creditCardsImg{max-width: 100%}
+
+.termsAndConditions{
+    margin-top: 50px
+}
+.termsAndConditions ul{
+    padding: 0;
+    list-style: none
+}
+.termsAndConditions ul li{
+    color: #777;
+    margin-bottom: 10px
+}
+
+
+.searchSection{
+    background: url('../Images/searchBg.png') no-repeat;
+    background-size: cover;
+    padding-bottom: 0
+}
+.searchSection .searchComp{
+    background: rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 3px;
+    margin: 50px 0
+}
+.searchComp .nav li{
+    display: inline-block
+}
+.searchComp .nav li a{
+    color: #fff;
+    border-radius: 3px
+}
+.searchComp .nav li a:hover{
+    background: #84898D;
+}
+.searchComp .nav li.active a{
+    background: #65737d;
+}
+.searchComp .item{
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px
+}
+.searchComp .item label{
+    color: #fff;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.searchComp .box{
+    overflow: hidden
+}
+.searchComp .box .top{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 3px 3px 0 0;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+.searchComp .box .bottom{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+}
+.searchComp .row.second{
+    margin-top: 15px
+}
+.searchComp .box input[type="text"]{
+    border: 0;
+    vertical-align: top;
+    margin-left: 5px
+}
+.searchComp .box label{
+    color: #81275a;
+    font-size: 10px;
+    width: 45px;
+    vertical-align: middle;
+    margin-bottom: 0
+
+}
+
+.searchComp .box .left{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+    padding: 10px;
+    float: left;
+    width: 50%;
+    margin-right: 1px;
+    color: #81275a;
+    height: 98px
+}
+.searchComp .box.second span{
+    display: block;
+    margin-bottom: 2px
+}
+.searchComp .box.second span.dayNum{
+    font-size: 32px;
+    line-height: 32px
+}
+.searchComp .box.second span.departureIcon{
+    position: absolute;
+    left: 5px;
+    top: 10px
+}
+.searchComp .box.second span.departureIcon svg *{
+    fill: #81275a
+}
+.searchComp .box .right{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 3px 3px 0;
+    padding: 10px;
+    float: right;
+    width: calc(50% - 1px);
+    height: 98px
+}
+
+
+.searchComp .box .right .addReturn{
+    text-decoration: none;
+
+}
+.searchComp .box .right .addReturn .icon{
+    margin: 12px 0
+}
+.searchComp .box .right .addReturn .returnText{
+    color: #777
+}
+
+
+.searchComp .box select{
+    width: 100%;
+    border: 0;
+    padding: 13.5px !important;
+}
+
+.searchComp .searchBtn a{
+    text-decoration: none;
+    background: linear-gradient(to bottom, #c44ba2 0%,#af257e 100%);
+    border-radius: 3px;
+    display: block;
+    color: #fff;
+    transition: all 0.3s;
+}
+.searchComp .searchBtn a:hover{
+    box-shadow: inset 0 0 14px 3px #af257e 
+}
+
+.searchComp .searchBtn a .icon{
+    display: block;
+    padding: 20px 0;
+}
+.searchComp .searchBtn a .text{
+    display: block;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.sectionTitle.custom{
+    max-width: 67%;
+}
+
+.imagineComp{
+    overflow: hidden
+}
+.imagineItem{
+    position: relative;
+    height: 400px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagineItem:nth-child(1){
+    background-image: url('../Images/funThings1.jpg');
+}
+.imagineItem:nth-child(2){
+    background-image: url('../Images/funThings2.jpg');
+}
+.imagineItem:nth-child(3){
+    background-image: url('../Images/funThings3.jpg');
+}
+.imagineItem .number{
+    color: rgba(255,255,255,0.4);
+    font-size: 140px;
+    line-height: 140px;
+    font-family: opensans-bold;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+.imagineItem .text{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    font-size: 30px;
+    font-family: opensans-bold;
+}
+
+.imagineCompTitleCont{
+    box-shadow: 0 70px 130px 20px #366d94;
+    position: relative;
+    z-index: 99;
+}
+
+
+.howItWorks .sectionTitle{
+    margin-bottom: 50px
+}
+.howItWorks .step{
+    
+}
+.howItWorks .step h4{
+    color: #751b53;
+    font-family: opensans-bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.howItWorks .step h4:after{
+    content: '';
+    background: #751b53;
+    height: 5px;
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+}
+.howItWorks .step .text{
+    color: #777;
+    font-size: 16px
+}
+
+
+.mobileAppsSection{
+    background: #3a789e;
+    padding: 0;
+    color: #fff;
+    direction: rtl
+}
+.mobileAppsSection [class*='col-']{
+    float: right
+}
+
+.mobileAppsSection .second img{
+    max-width: 250px;
+    margin-top: -50px;
+}
+.mobileAppsSection .text{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+footer{
+    background: linear-gradient(to right, rgba(31,78,152,1) 0%,rgba(47,193,202,1) 100%);
+    direction: rtl
+}
+footer .footerPattern{
+    background: url('../Images/footerPattern.png');
+    padding: 30px 0;
+    /* height: 100% */
+}
+
+footer [class*='col-']{
+    float: right
+}
+
+footer h4{
+    color: #39d6f7;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+footer h4:after{
+    content: '';
+    height: 2px;
+    background: #fff;
+    display: block;
+    width: 30px;
+    margin-top: 15px
+}
+footer .item{
+    margin-bottom: 15px
+}
+footer .item svg{
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+    margin-left: 5px;
+}
+footer .item a{
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+}
+
+footer .row{
+    padding-right: 150px;
+    background: url('../Images/footerLogo.png') no-repeat center right;
+    background-size: 100px;
+}
+
+.copyrights{
+    color: #fff;
+    margin-top: 20px
+}
+.copyrights div{
+    margin-top: 10px;
+    font-weight: bold
+}
+
+.slick-dots li button{
+    background: #d33497;
+    border-radius: 50px
+}
+.slick-dots li button::before{
+    display: none
+}
+.slick-dots li.slick-active button{background: #333}
+
+
+
+
+
+
+
+
+/* Responsive Begins */
+
+
+@media (max-width: 1199px) {
+    .searchComp .box .right{padding: 10px 5px}
+    .searchComp .box.second span.departureIcon{top:39px}
+
+}
+/* End of 1199 */
+
+
+@media (max-width: 991px) {
+    header .item{
+        margin-left: 15px
+    }
+    .destinationSlider .slick-list{margin-left: 0}
+    .destinationSlider .slick-arrow{display: none !important}
+    .destinationSlider .moreBtn{right: -5px;
+        bottom: -5px;
+        width: 20px;
+        height: 20px;
+    }
+    .destinationSlider .moreBtn svg{margin-top: 8px}
+    .searchComp .box{margin-top: 10px}
+    .sectionTitle.custom{max-width: 100%}
+    .imagineItem .text{font-size: 20px}
+
+}
+/* End of 991 */
+
+
+@media (max-width: 767px) {
+    header{text-align: center}
+    header .second{text-align: center; margin-top: 15px}
+    .mainHomeSection .content h1{font-size: 30px; max-width: 100%; line-height: 34px}
+    .emiratesIslamicLogo img{max-width: 200px}
+    .mainHomeSection .scrollDownBtn{width: 40px; height: 40px; bottom: -20px; right: 20px}
+    .mainHomeSection .scrollDownBtn svg{margin-top: 15px;width: 15px;}
+    .sectionTitle{font-size: 26px; line-height: 28px;}
+    .sectionTitle:after{margin-top: 15px}
+    .imagineItem{height: 200px}
+    .imagineItem .text{right: 20px;left: initial;bottom: 20px;    text-shadow: 0 0 10px #333;}
+    .imagineCompTitleCont{box-shadow: none; margin-bottom: 20px}
+    section{padding: 50px 0}
+    .mobileAppsSection .second{display: none}
+}
+/* End of 767 */
+
+
+@media (max-width: 600px) {
+    .destinationSlider .slick-current+div{transform: scale(1)}
+
+
+}
+/* End of 600 */
+
+
+@media (max-width: 480px) {
+    .logoCont{display: block; margin-bottom: 15px}
+    .destinationSlider .slick-current{opacity: 1}
+    .slick-dots li, .slick-dots li button{width: 15px; height: 15px}
+    .searchComp .nav li a{padding: 10px}
+    .searchComp .item{float: none; margin-left: 0}
+    .sectionTitle{font-size: 22px}
+    .creditCardsSection .creditCardsImg{margin-top: 20px}
+    footer .row{    padding: 50px 0 0 0;
+        background-position: top;
+        background-size: 40px;}
+
+}
+/* End of 480 */
+
+
+@media (max-width: 380px) {
+
+
+
+}
+/* End of 380 */
+
+
+/* Responsive Ends */
+
+
